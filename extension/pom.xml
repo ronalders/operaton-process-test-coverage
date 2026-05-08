@@ -15,16 +15,12 @@
     <modules>
         <module>core</module>
         <module>engine-platform-7</module>
-        <module>engine-platform-8</module>
         <module>junit4-platform-7</module>
         <module>junit5-common</module>
         <module>junit5-platform-7</module>
-        <module>junit5-platform-8</module>
         <module>spring-test-common</module>
         <module>spring-test-platform-7</module>
-        <module>spring-test-platform-8</module>
         <module>starter-platform-7</module>
-        <module>starter-platform-8</module>
         <module>report-generator</module>
     </modules>
 
@@ -53,7 +49,6 @@
             </activation>
             <modules>
                 <module>report-aggregator-maven-plugin</module>
-                <module>report-aggregator-gradle-plugin</module>
                 <module>sonar-process-test-coverage-plugin</module>
             </modules>
         </profile>
