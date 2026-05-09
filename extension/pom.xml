@@ -3,19 +3,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-root</artifactId>
-        <version>3.0.2-SNAPSHOT</version>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <artifactId>operaton-process-test-coverage-root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Extension Parent</name>
-    <artifactId>camunda-process-test-coverage-parent</artifactId>
+    <name>Operaton Process Test Coverage Extension Parent</name>
+    <artifactId>operaton-process-test-coverage-parent</artifactId>
     <packaging>pom</packaging>
 
     <modules>
         <module>core</module>
         <module>engine-platform-7</module>
-        <module>junit4-platform-7</module>
         <module>junit5-common</module>
         <module>junit5-platform-7</module>
         <module>spring-test-common</module>
@@ -28,8 +27,8 @@
         <dependencies>
             <!-- Own BOM -->
             <dependency>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-bom</artifactId>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-bom</artifactId>
                 <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>

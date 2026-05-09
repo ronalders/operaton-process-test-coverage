@@ -13,7 +13,7 @@
 > However, we included the current state of the extension into the [holunda-io/c7](https://github.com/holunda-io/c7/) repository, where we will maintain it together with other extensions and keep it working for future C7-EE releases.
 
 
-# Camunda Process Test Coverage
+# Operaton Process Test Coverage
 
 This Camunda Platform 7 and Platform 8 community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
 
@@ -39,20 +39,20 @@ This Camunda Platform 7 and Platform 8 community extension **visualises** test p
 
 ## Documentation
 
-If you are interested in further documentation, please check our [Documentation Page](https://camunda-community-hub.github.io/camunda-process-test-coverage/snapshot/index.html)
+If you are interested in further documentation, please check our [Documentation Page](https://camunda-community-hub.github.io/operaton-process-test-coverage/snapshot/index.html)
 
 ## Installation
 
-Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.camunda.community.process_test_coverage/camunda-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.camunda.community.process_test_coverage/camunda-process-test-coverage-bom/badge.svg" align="right" /></a>
+Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/operaton-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/operaton-process-test-coverage-bom/badge.svg" align="right" /></a>
 
 ### JUnit5 (Platform 7 or Platform 8)
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-junit5-platform-7</artifactId>
-  <!-- <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId> -->
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+  <!-- <artifactId>operaton-process-test-coverage-junit5-platform-8</artifactId> -->
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -63,7 +63,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 
 ```xml
 <bean id="processEngineConfiguration"
-   class="org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
+   class="org.operaton.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
    ...
 </bean>
 ```
@@ -121,7 +121,7 @@ but then the project has been abandoned for some time and received a full rewrit
 of flowcov.io squad and BPM craftsmen from Holisticon AG. We appreciate any help and effort you put into maintenance
 discussion and further development.
 
-Please check the release notes of [individual releases](https://github.com/camunda-community-hub/camunda-process-test-coverage/releases) for the changes and involved contributors.
+Please check the release notes of [individual releases](https://github.com/camunda-community-hub/operaton-process-test-coverage/releases) for the changes and involved contributors.
 
 ## License
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [LICENSE](LICENSE.md) file.

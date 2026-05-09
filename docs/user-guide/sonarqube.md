@@ -4,9 +4,9 @@ A plugin for sonarqube is provided with the artifact
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>sonar-operaton-process-test-coverage-plugin</artifactId>
+  <version>${operaton-process-test-coverage.version}</version>
 </dependency>
 ```
 

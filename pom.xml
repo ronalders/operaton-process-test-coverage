@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.camunda.community</groupId>
-        <artifactId>community-hub-release-parent</artifactId>
-        <version>2.1.0</version>
-        <relativePath />
-    </parent>
 
-    <groupId>org.camunda.community.process_test_coverage</groupId>
-    <artifactId>camunda-process-test-coverage-root</artifactId>
+    <groupId>org.operaton.community.process_test_coverage</groupId>
+    <artifactId>operaton-process-test-coverage-root</artifactId>
     <packaging>pom</packaging>
-    <version>3.0.2-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
-    <name>Camunda Process Test Coverage Root</name>
+    <name>Operaton Process Test Coverage Root</name>
     <description>Helper library to visualize and assert which parts of a BPMN process have been covered by a test.
     </description>
-    <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/</url>
-    <issueManagement>
-        <system>github</system>
-        <url>https://github.com/camunda-community-hub/camunda-process-test-coverage/issues</url>
-    </issueManagement>
-    <inceptionYear>2019</inceptionYear>
 
     <modules>
         <module>bom</module>
@@ -34,12 +22,7 @@
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
         <kotlin-logging.version>7.0.13</kotlin-logging.version>
 
-        <!--
-        For backwards compatibility we pin the version to compile to Camunda 7.20.
-        -->
-        <camunda.compile.version>7.20.0</camunda.compile.version>
-        <zeebe-process-test.version>8.4.5</zeebe-process-test.version>
-        <spring-zeebe.version>8.3.6</spring-zeebe.version>
+        <operaton.compile.version>1.1.2</operaton.compile.version>
         <spring-boot.version>3.5.7</spring-boot.version>
 
         <mockito-kotlin.version>6.1.0</mockito-kotlin.version>
@@ -76,40 +59,32 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Camunda 7 -->
+            <!-- operaton -->
             <dependency>
-                <groupId>org.camunda.bpm</groupId>
-                <artifactId>camunda-bom</artifactId>
-                <version>${camunda.compile.version}</version>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-engine</artifactId>
+                <version>${operaton.compile.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-engine</artifactId>
+                <version>${operaton.compile.version}</version>
+                <classifier>junit5</classifier>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-bpm-junit5</artifactId>
+                <version>${operaton.compile.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-bom</artifactId>
+                <version>${operaton.compile.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
-
-            <!-- Camunda 8: Zeebe Process Test -->
-            <dependency>
-                <groupId>io.camunda</groupId>
-                <artifactId>zeebe-process-test-assertions</artifactId>
-                <scope>provided</scope>
-                <version>${zeebe-process-test.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.camunda</groupId>
-                <artifactId>zeebe-process-test-extension-testcontainer</artifactId>
-                <version>${zeebe-process-test.version}</version>
-                <scope>test</scope>
-            </dependency>
-            <!-- Camunda 8: Spring Zeebe -->
-            <dependency>
-                <groupId>io.camunda.spring</groupId>
-                <artifactId>spring-boot-starter-camunda</artifactId>
-                <version>${spring-zeebe.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.camunda.spring</groupId>
-                <artifactId>spring-boot-starter-camunda-test-testcontainer</artifactId>
-                <version>${spring-zeebe.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 
@@ -407,9 +382,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:camunda-community-hub/camunda-process-test-coverage.git</connection>
-        <url>scm:git:git@github.com:camunda-community-hub/camunda-process-test-coverage.git</url>
-        <developerConnection>scm:git:git@github.com:camunda-community-hub/camunda-process-test-coverage.git
+        <connection>scm:git:git@github.com:camunda-community-hub/operaton-process-test-coverage.git</connection>
+        <url>scm:git:git@github.com:camunda-community-hub/operaton-process-test-coverage.git</url>
+        <developerConnection>scm:git:git@github.com:camunda-community-hub/operaton-process-test-coverage.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>

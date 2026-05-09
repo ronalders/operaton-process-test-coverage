@@ -2,38 +2,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-examples-parent</artifactId>
-        <version>3.0.2-SNAPSHOT</version>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <artifactId>operaton-process-test-coverage-examples-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Example Spring-Testing with starter Platform 7</name>
-    <artifactId>camunda-process-test-coverage-examples-spring-starter-platform-7</artifactId>
+    <name>Operaton Process Test Coverage Example Spring-Testing with starter Platform 7</name>
+    <artifactId>operaton-process-test-coverage-examples-spring-starter-platform-7</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
-            <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
+            <groupId>org.operaton.bpm.springboot</groupId>
+            <artifactId>operaton-bpm-spring-boot-starter-test</artifactId>
+            <version>1.1.2</version>
         </dependency>
 
         <dependency>
-            <groupId>org.camunda.community.process_test_coverage</groupId>
-            <artifactId>camunda-process-test-coverage-starter-platform-7</artifactId>
+            <groupId>org.operaton.community.process_test_coverage</groupId>
+            <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm</groupId>
-            <artifactId>camunda-engine</artifactId>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-engine</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.camunda.bpm</groupId>
-            <artifactId>camunda-engine-spring</artifactId>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-engine-spring</artifactId>
         </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
-            <groupId>org.camunda.bpm.springboot</groupId>
-            <artifactId>camunda-bpm-spring-boot-starter-test</artifactId>
+            <groupId>org.operaton.bpm.springboot</groupId>
+            <artifactId>operaton-bpm-spring-boot-starter-rest</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>

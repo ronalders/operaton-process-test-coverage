@@ -47,8 +47,8 @@ possible to configure the output directory for the aggregation report inside the
 
 ```xml
 <plugin>
-    <groupId>org.camunda.community.process_test_coverage</groupId>
-    <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+    <groupId>org.operaton.community.process_test_coverage</groupId>
+    <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
     <version>@project.version@</version>
     <executions>
         <execution>
@@ -73,7 +73,7 @@ This can be done via an extension setting in the gradle build file.
 
 ```groovy
 plugins {
-    id 'org.camunda.community.process_test_coverage.report-aggregator'
+    id 'org.operaton.community.process_test_coverage.report-aggregator'
 }
 
 aggregateProcessTestCoverage {
@@ -84,7 +84,7 @@ aggregateProcessTestCoverage {
 
 ### Legacy way via system property
 
-We still support the old way to configure the reporting directory via system property `camunda-process-test-coverage.target-dir-root`.
+We still support the old way to configure the reporting directory via system property `operaton-process-test-coverage.target-dir-root`.
 
 #### Maven
 ```xml
@@ -93,7 +93,7 @@ We still support the old way to configure the reporting directory via system pro
 <artifactId>maven-surefire-plugin</artifactId>
 <configuration>
   <systemPropertyVariables>
-    <camunda-process-test-coverage.target-dir-root>${project.build.directory}/my-coverage-reports/</camunda-process-test-coverage.target-dir-root>
+    <operaton-process-test-coverage.target-dir-root>${project.build.directory}/my-coverage-reports/</operaton-process-test-coverage.target-dir-root>
   </systemPropertyVariables>
 </configuration>
 </plugin>
@@ -104,7 +104,7 @@ We still support the old way to configure the reporting directory via system pro
 tasks {
     withType<Test> {
         systemProperties = mapOf(
-            "camunda-process-test-coverage.target-dir-root" to "$buildDir/my-coverage-reports/"
+            "operaton-process-test-coverage.target-dir-root" to "$buildDir/my-coverage-reports/"
         )
     }
 }

@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-root</artifactId>
-        <version>3.0.2-SNAPSHOT</version>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <artifactId>operaton-process-test-coverage-root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Examples Parent</name>
-    <artifactId>camunda-process-test-coverage-examples-parent</artifactId>
+    <name>Operaton Process Test Coverage Examples Parent</name>
+    <artifactId>operaton-process-test-coverage-examples-parent</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -22,9 +22,7 @@
     </properties>
 
     <modules>
-        <module>junit4-platform-7</module>
         <module>junit5-platform-7</module>
-        <module>jgiven-platform-7</module>
         <module>spring-test-platform-7</module>
         <module>spring-starter-platform-7</module>
     </modules>
@@ -33,8 +31,8 @@
         <dependencies>
             <!-- Own BOM -->
             <dependency>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-bom</artifactId>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-bom</artifactId>
                 <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
@@ -51,8 +49,8 @@
                     <version>3.12.1</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.camunda.community.process_test_coverage</groupId>
-                    <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                    <groupId>org.operaton.community.process_test_coverage</groupId>
+                    <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                     <version>${project.version}</version>
                 </plugin>
             </plugins>
@@ -78,8 +76,8 @@
                 </reportSets>
             </plugin>
             <plugin>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </reporting>

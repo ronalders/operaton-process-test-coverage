@@ -4,18 +4,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.camunda.community.process_test_coverage</groupId>
-        <artifactId>camunda-process-test-coverage-root</artifactId>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <artifactId>operaton-process-test-coverage-root</artifactId>
         <version>3.0.1</version>
     </parent>
 
-    <name>Camunda Process Test Coverage Regression Tests Parent</name>
-    <artifactId>camunda-process-test-coverage-regression-tests-parent</artifactId>
+    <name>Operaton Process Test Coverage Regression Tests Parent</name>
+    <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
     <packaging>pom</packaging>
 
     <properties>
         <graalvm.version>25.0.0</graalvm.version>
-        <camunda.version>${camunda.compile.version}</camunda.version>
+        <operaton.version>${operaton.compile.version}</operaton.version>
 
         <jacoco.skip>true</jacoco.skip>
         <dokka.skip>true</dokka.skip>
@@ -26,7 +26,6 @@
     </properties>
 
     <modules>
-        <module>junit4-platform-7</module>
         <module>junit5-platform-7</module>
         <module>spring-test-platform-7</module>
         <module>spring-starter-platform-7</module>
@@ -54,17 +53,17 @@
 
             <!-- Re-define Camunda -->
             <dependency>
-                <groupId>org.camunda.bpm</groupId>
-                <artifactId>camunda-bom</artifactId>
-                <version>${camunda.version}</version>
+                <groupId>org.operaton.bpm</groupId>
+                <artifactId>operaton-bom</artifactId>
+                <version>${operaton.compile.version</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
 
             <!-- Own BOM -->
             <dependency>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-bom</artifactId>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-bom</artifactId>
                 <version>${project.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
@@ -91,37 +90,10 @@
     <profiles>
         <!-- Profiles just here to ease testing in IDEs -->
         <profile>
-            <id>camunda-bpm-engine-LATEST</id>
+            <id>operaton-bpm-engine-1.1.2</id>
             <properties>
-                <camunda.version>LATEST</camunda.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>camunda-bpm-engine-7.24</id>
-            <properties>
-                <camunda.version>7.24.0</camunda.version>
+                <operato.version>1.1.2</operato.version>
                 <spring-boot.version>3.5.6</spring-boot.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>camunda-bpm-engine-7.23</id>
-            <properties>
-                <camunda.version>7.23.0</camunda.version>
-                <spring-boot.version>3.4.4</spring-boot.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>camunda-bpm-engine-7.22</id>
-            <properties>
-                <camunda.version>7.22.0</camunda.version>
-                <spring-boot.version>3.3.10</spring-boot.version>
-            </properties>
-        </profile>
-        <profile>
-            <id>camunda-bpm-engine-7.21</id>
-            <properties>
-                <camunda.version>7.21.0</camunda.version>
-                <spring-boot.version>3.2.12</spring-boot.version>
             </properties>
         </profile>
 

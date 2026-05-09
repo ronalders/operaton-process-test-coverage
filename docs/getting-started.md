@@ -6,7 +6,7 @@ Please define the version of the library using properties like this:
 
 ```xml
 <properties>
-  <camunda-process-test-coverage.version>{{ POM_VERSION }}</camunda-process-test-coverage.version>
+  <operaton-process-test-coverage.version>{{ POM_VERSION }}</operaton-process-test-coverage.version>
 </properties>
 ```
 
@@ -14,9 +14,9 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-junit4-platform-7</artifactId>
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>operaton-process-test-coverage-junit4-platform-7</artifactId>
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -25,10 +25,10 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-junit5-platform-7</artifactId>
-  <!-- <artifactId>camunda-process-test-coverage-junit5-platform-8</artifactId> -->
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+  <!-- <artifactId>operaton-process-test-coverage-junit5-platform-8</artifactId> -->
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -37,10 +37,10 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-spring-test-platform-7</artifactId>
-  <!-- <artifactId>camunda-process-test-coverage-spring-test-platform-8</artifactId> -->
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>operaton-process-test-coverage-spring-test-platform-7</artifactId>
+  <!-- <artifactId>operaton-process-test-coverage-spring-test-platform-8</artifactId> -->
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -49,10 +49,10 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>camunda-process-test-coverage-starter-platform-7</artifactId>
-  <!-- <artifactId>camunda-process-test-coverage-starter-platform-8</artifactId> -->
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
+  <!-- <artifactId>operaton-process-test-coverage-starter-platform-8</artifactId> -->
+  <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
@@ -68,7 +68,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 
 ```xml
 <bean id="processEngineConfiguration"
-   class="org.camunda.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
+   class="org.operaton.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration">
    ...
 </bean>
 ```
@@ -163,8 +163,8 @@ If you just want to aggregate all reports in one maven module, the plugin can be
     <build>
         <plugins>
             <plugin>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <executions>
                     <execution>
                         <id>aggregate-reports</id>
@@ -192,16 +192,16 @@ You can still configure the plugin in the pluginManagement section.
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.camunda.community.process_test_coverage</groupId>
-                    <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
-                    <version>${camunda-process-test-coverage.version}</version>
+                    <groupId>org.operaton.community.process_test_coverage</groupId>
+                    <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                    <version>${operaton-process-test-coverage.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
     </build>
 ```
 
-It can then be invoked by calling *mvn camunda-process-test-coverage-report-aggregator:aggregate*.
+It can then be invoked by calling *mvn operaton-process-test-coverage-report-aggregator:aggregate*.
 
 ### Usage as a reporting plugin
 
@@ -212,9 +212,9 @@ The configuration for this use case looks like this:
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.camunda.community.process_test_coverage</groupId>
-                <artifactId>camunda-process-test-coverage-report-aggregator-maven-plugin</artifactId>
-                <version>${camunda-process-test-coverage.version}</version>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <version>${operaton-process-test-coverage.version}</version>
             </plugin>
         </plugins>
     </reporting>
@@ -231,11 +231,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.camunda.community.process_test_coverage:camunda-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
+        classpath("org.operaton.community.process_test_coverage:operaton-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
     }
 }
 
-apply(plugin = "org.camunda.community.process_test_coverage.report-aggregator")
+apply(plugin = "org.operaton.community.process_test_coverage.report-aggregator")
 ```
 
 Afterwards the reports can be aggregated by calling `gradle aggregateProcessTestCoverage`.
@@ -247,9 +247,9 @@ This functionality is provided by the artifact:
 
 ```xml
 <dependency>
-  <groupId>org.camunda.community.process_test_coverage</groupId>
-  <artifactId>sonar-camunda-process-test-coverage-plugin</artifactId>
-  <version>${camunda-process-test-coverage.version}</version>
+  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <artifactId>sonar-operaton-process-test-coverage-plugin</artifactId>
+  <version>${operaton-process-test-coverage.version}</version>
 </dependency>
 ```
 
