@@ -10,48 +10,34 @@ Please define the version of the library using properties like this:
 </properties>
 ```
 
-### JUnit4 (only Platform 7)
-
-```xml
-<dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>operaton-process-test-coverage-junit4-platform-7</artifactId>
-  <version>${operaton-process-test-coverage.version}</version>
-  <scope>test</scope>
-</dependency>
-```
-
-### JUnit5 (Platform 7 or Platform 8)
+### JUnit5 
 
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
   <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
-  <!-- <artifactId>operaton-process-test-coverage-junit5-platform-8</artifactId> -->
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
 
-### Spring-Testing (Platform 7 or Platform 8)
+### Spring-Testing
 
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
   <artifactId>operaton-process-test-coverage-spring-test-platform-7</artifactId>
-  <!-- <artifactId>operaton-process-test-coverage-spring-test-platform-8</artifactId> -->
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
 ```
 
-### Spring-Testing with starter (Platform 7 or Platform 8)
+### Spring-Testing with starter 
 
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
   <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
-  <!-- <artifactId>operaton-process-test-coverage-starter-platform-8</artifactId> -->
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -62,9 +48,9 @@ that should not be included in the test coverage.
 
 ## Configuration
 
-Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camunda.cfg.xml` (only needed for Platform 7)
+Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `operaton.cfg.xml` 
 
-### JUnit4 and JUnit5
+### JUnit5
 
 ```xml
 <bean id="processEngineConfiguration"
@@ -85,15 +71,6 @@ public class MySpringConfiguration {}
 
 Wire the process engine in your JUnit test:
 
-### JUnit4
-
-Use the **TestCoverageProcessEngineRule** as your process engine JUnit rule
-
-```java
-@Rule
-@ClassRule
-public static ProcessEngineRule rule = TestCoverageProcessEngineRuleBuilder.create().build();
-```
 ### JUnit5
 
 Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension (available for Platform 7 and Platform 8)
@@ -219,26 +196,6 @@ The configuration for this use case looks like this:
         </plugins>
     </reporting>
 ```
-
-### Usage of the gradle plugin
-
-The functionality to aggregate the process test coverage reports is also provided as a gradle plugin.
-For this to work you have to include the plugin in the gradle build file `build.gradle.kts`.
-
-```kotlin
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.operaton.community.process_test_coverage:operaton-process-test-coverage-report-aggregator-gradle-plugin:{{ POM_VERSION }}")
-    }
-}
-
-apply(plugin = "org.operaton.community.process_test_coverage.report-aggregator")
-```
-
-Afterwards the reports can be aggregated by calling `gradle aggregateProcessTestCoverage`.
 
 ## Sonarqube plugin
 
