@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-examples-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <name>Operaton Process Test Coverage Example Spring-Testing with starter</name>
