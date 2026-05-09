@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-root</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -16,47 +16,47 @@
         <dependencies>
             <!-- Own modules -->
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-engine</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-junit5-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-junit5</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-spring-test-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-spring-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-report-generator</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <version>${project.version}</version>
             </dependency>

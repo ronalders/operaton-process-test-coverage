@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-root</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -31,7 +31,7 @@
         <dependencies>
             <!-- Own BOM -->
             <dependency>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-bom</artifactId>
                 <version>${project.version}</version>
                 <scope>import</scope>
@@ -49,7 +49,7 @@
                     <version>3.12.1</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.operaton.community.process_test_coverage</groupId>
+                    <groupId>io.github.ronalders</groupId>
                     <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                     <version>${project.version}</version>
                 </plugin>
@@ -76,7 +76,7 @@
                 </reportSets>
             </plugin>
             <plugin>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
             </plugin>
         </plugins>

@@ -1,21 +1,6 @@
-[![](https://img.shields.io/badge/Lifecycle-Deprecated-red)](https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#deprecated-[https://github.com/Camunda-Community-Hub/community/blob/main/extension-lifecycle.md#relocated-)
-[![](https://img.shields.io/badge/Community%20Extension-An%20open%20source%20community%20maintained%20project-FF4700)](https://github.com/camunda-community-hub/community)
-![Compatible with: Camunda Platform 7](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%207-26d07c)
-![Compatible with: Camunda Platform 8](https://img.shields.io/badge/Compatible%20with-Camunda%20Platform%208-26d07c)
-![Supported Camunda versions](https://img.shields.io/badge/Camunda%20Version-%207.20%20to%207.24%20and%208-orange.svg)
-
-> [!WARNING]
-> ### Discontinued/Moved
-> Due to the end of live of Camunda 7 CE with 7.24, we decided to discontinue this extension and archive the repository.
-> The Release 3.0.1 will be the last one. If you are looking for functionality for Camunda 8, please refer to official 
-> [Camunda Process Testing](https://docs.camunda.io/docs/next/apis-tools/testing/getting-started/) documentation.
->
-> However, we included the current state of the extension into the [holunda-io/c7](https://github.com/holunda-io/c7/) repository, where we will maintain it together with other extensions and keep it working for future C7-EE releases.
-
-
 # Operaton Process Test Coverage
 
-This Camunda Platform 7 and Platform 8 community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
+This Operaton community extension **visualises** test process **paths** and **checks** your process model **coverage** ratio. Running  typical JUnit tests now leaves **html** files in your build output. Just open one and check yourself what your test did:
 
 ![Coverage report](docs/assets/img/flowcov_coverage_report.png)
 
@@ -27,30 +12,25 @@ This Camunda Platform 7 and Platform 8 community extension **visualises** test p
 
 ## Just use it
 
-* Integrates with all versions of Camunda Platform 7 starting with 7.20.0 and upwards as well as Camunda Platform 8
-* Is continuously checked against the latest Camunda Platform 7 releases (check out our compatibility CI/CD pipeline)
+* Integrates with all versions of Operato
 * Tested with JDKs 17 and 21 and different operating systems (Windows, Mac and Linux).
-* Supports **JUnit 4.13.1+** (4.11 does not work) or **JUnit 5** for Camunda 7
-* Supports **JUnit 5** for Camunda 8 (uses Zeebe Process Test)
+* Supports **JUnit 5** 
 * Can be used inside Spring Tests
-
-> [!IMPORTANT]
-> If you're running with a Java version prior to 17 you have to use the old version 2.x (latest 2.8.0)
 
 ## Documentation
 
-If you are interested in further documentation, please check our [Documentation Page](https://camunda-community-hub.github.io/operaton-process-test-coverage/snapshot/index.html)
+If you are interested in further documentation, please check our [Documentation Page](https://github.com/ronalders/operaton-process-test-coverage/blob/master/docs/index.md)
 
 ## Installation
 
 Add a **Maven test dependency** to your project <a href="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/operaton-process-test-coverage-bom"><img src="https://maven-badges.herokuapp.com/maven-central/org.operaton.community.process_test_coverage/operaton-process-test-coverage-bom/badge.svg" align="right" /></a>
 
-### JUnit5 (Platform 7 or Platform 8)
+### JUnit5 
 
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+  <artifactId>operaton-process-test-coverage-junit5</artifactId>
   <!-- <artifactId>operaton-process-test-coverage-junit5-platform-8</artifactId> -->
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>

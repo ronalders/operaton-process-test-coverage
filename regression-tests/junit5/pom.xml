@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.operaton.community.process_test_coverage</groupId>
+        <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-regression-tests-parent</artifactId>
         <version>3.0.1</version>
     </parent>
