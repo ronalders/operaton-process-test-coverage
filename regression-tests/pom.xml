@@ -51,11 +51,10 @@
                 <type>pom</type>
             </dependency>
 
-            <!-- Re-define Camunda -->
             <dependency>
                 <groupId>org.operaton.bpm</groupId>
                 <artifactId>operaton-bom</artifactId>
-                <version>${operaton.compile.version</version>
+                <version>${operaton.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
@@ -92,8 +91,15 @@
         <profile>
             <id>operaton-bpm-engine-1.1.2</id>
             <properties>
-                <operato.version>1.1.2</operato.version>
+                <operaton.version>1.1.2</operaton.version>
                 <spring-boot.version>3.5.6</spring-boot.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>operaton-bpm-engine-2.1.0</id>
+            <properties>
+                <operaton.version>2.1.0</operaton.version>
+                <spring-boot.version>4.0.6</spring-boot.version>
             </properties>
         </profile>
 

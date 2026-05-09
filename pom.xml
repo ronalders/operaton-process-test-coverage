@@ -60,11 +60,11 @@
             </dependency>
 
             <!-- operaton -->
-            <dependency>
-                <groupId>org.operaton.bpm</groupId>
-                <artifactId>operaton-engine</artifactId>
-                <version>${operaton.compile.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.operaton.bpm</groupId>-->
+<!--                <artifactId>operaton-engine</artifactId>-->
+<!--                <version>${operaton.compile.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>org.operaton.bpm</groupId>
                 <artifactId>operaton-engine</artifactId>
