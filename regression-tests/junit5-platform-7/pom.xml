@@ -10,8 +10,8 @@
         <version>3.0.1</version>
     </parent>
 
-    <artifactId>operaton-process-test-coverage-regression-tests-junit5-platform-7</artifactId>
-    <name>Operaton Process Test Coverage Regression Test JUnit5 Platform 7</name>
+    <artifactId>operaton-process-test-coverage-regression-tests-junit5</artifactId>
+    <name>Operaton Process Test Coverage Regression Test JUnit5</name>
     <description>
         All library tests are here in order to allow compiling against Operaton release and regression testing against different versions.
     </description>
@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-junit5</artifactId>
             <scope>test</scope>
         </dependency>
 

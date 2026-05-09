@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>org.operaton.community.process_test_coverage</groupId>
         <artifactId>operaton-process-test-coverage-parent</artifactId>
+        <groupId>org.operaton.community.process_test_coverage</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-
-    <name>Operaton Process Test Coverage Engine Platform 7</name>
-    <artifactId>operaton-process-test-coverage-engine-platform-7</artifactId>
-
-    <properties>
-        <dokka.skip>true</dokka.skip>
-    </properties>
+    <name>Operaton Process Test Coverage JUnit5</name>
+    <artifactId>operaton-process-test-coverage-junit5</artifactId>
 
     <dependencies>
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>operaton-process-test-coverage-core</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.operaton.bpm</groupId>
             <artifactId>operaton-engine</artifactId>
-            <version>${operaton.compile.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-engine</artifactId>
+            <classifier>junit5</classifier>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>operaton-process-test-coverage-junit5-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>operaton-process-test-coverage-engine</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>operaton-process-test-coverage-report-generator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.operaton.bpm</groupId>
             <artifactId>operaton-engine-spring</artifactId>
-            <version>${operaton.compile.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-bpm-junit5</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -45,7 +54,10 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
         </dependency>
 
     </dependencies>

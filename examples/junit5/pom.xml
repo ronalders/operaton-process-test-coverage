@@ -7,13 +7,13 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>Operaton Process Test Coverage Example JUnit5 Platform 7</name>
-    <artifactId>operaton-process-test-coverage-examples-junit5-platform-7</artifactId>
+    <name>Operaton Process Test Coverage Example JUnit5</name>
+    <artifactId>operaton-process-test-coverage-examples-junit5</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.operaton.community.process_test_coverage</groupId>
-            <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-junit5</artifactId>
         </dependency>
         <dependency>
             <groupId>org.operaton.bpm</groupId>

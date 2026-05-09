@@ -6,13 +6,13 @@
         <artifactId>operaton-process-test-coverage-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <name>Operaton Process Test Coverage Starter Platform 7</name>
-    <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
+    <name>Operaton Process Test Coverage Starter</name>
+    <artifactId>operaton-process-test-coverage-starter</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>operaton-process-test-coverage-spring-test-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-spring-test</artifactId>
         </dependency>
     </dependencies>
 

@@ -1,6 +1,6 @@
 ## Install Dependency
 
-The library supports multiple execution platforms for the test and multiple process engines, so we supply different artifacts which you need to add to your project dependencies:
+The library supports multiple execution platforms for the test, so we supply different artifacts which you need to add to your project dependencies:
 
 Please define the version of the library using properties like this:
 
@@ -15,7 +15,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>operaton-process-test-coverage-junit5-platform-7</artifactId>
+  <artifactId>operaton-process-test-coverage-junit5</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -26,7 +26,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>operaton-process-test-coverage-spring-test-platform-7</artifactId>
+  <artifactId>operaton-process-test-coverage-spring-test</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -37,7 +37,7 @@ Please define the version of the library using properties like this:
 ```xml
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
-  <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
+  <artifactId>operaton-process-test-coverage-starter</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -73,7 +73,7 @@ Wire the process engine in your JUnit test:
 
 ### JUnit5
 
-Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension (available for Platform 7 and Platform 8)
+Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension 
 
 Either use `@ExtendWith`
 

@@ -9,8 +9,8 @@
         <version>3.0.1</version>
     </parent>
 
-    <artifactId>operaton-process-test-coverage-regression-tests-spring-test-platform-7</artifactId>
-    <name>Operaton Process Test Coverage Regression Test Spring Testing Platform 7</name>
+    <artifactId>operaton-process-test-coverage-regression-tests-spring-test</artifactId>
+    <name>Operaton Process Test Coverage Regression Test Spring Testing </name>
     <description>
         All library tests are here in order to allow compiling against Operaton release and regression testing against different versions.
     </description>
@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>operaton-process-test-coverage-spring-test-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-spring-test</artifactId>
             <scope>test</scope>
         </dependency>
 

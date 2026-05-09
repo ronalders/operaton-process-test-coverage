@@ -7,8 +7,8 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <name>Operaton Process Test Coverage Example Spring-Testing with starter Platform 7</name>
-    <artifactId>operaton-process-test-coverage-examples-spring-starter-platform-7</artifactId>
+    <name>Operaton Process Test Coverage Example Spring-Testing</name>
+    <artifactId>operaton-process-test-coverage-examples-spring-test</artifactId>
 
     <dependencies>
         <dependency>
@@ -19,7 +19,7 @@
 
         <dependency>
             <groupId>org.operaton.community.process_test_coverage</groupId>
-            <artifactId>operaton-process-test-coverage-starter-platform-7</artifactId>
+            <artifactId>operaton-process-test-coverage-spring-test</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -42,6 +42,12 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.operaton.bpm</groupId>
+            <artifactId>operaton-bpm-assert</artifactId>
+            <version>1.1.2</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
@@ -54,4 +60,22 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>aggregate-reports</id>
+                        <goals>
+                            <goal>aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

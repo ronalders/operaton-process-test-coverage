@@ -26,9 +26,9 @@
     </properties>
 
     <modules>
-        <module>junit5-platform-7</module>
-        <module>spring-test-platform-7</module>
-        <module>spring-starter-platform-7</module>
+        <module>junit5</module>
+        <module>spring-test</module>
+        <module>spring-starter</module>
     </modules>
 
     <dependencyManagement>
