@@ -31,7 +31,6 @@ Add a **Maven test dependency** to your project <a href="https://maven-badges.he
 <dependency>
   <groupId>org.operaton.community.process_test_coverage</groupId>
   <artifactId>operaton-process-test-coverage-junit5</artifactId>
-  <!-- <artifactId>operaton-process-test-coverage-junit5-platform-8</artifactId> -->
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
 </dependency>
@@ -39,7 +38,7 @@ Add a **Maven test dependency** to your project <a href="https://maven-badges.he
 
 ## Configuration
 
-Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camunda.cfg.xml` (only needed for Platform 7)
+Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `operaton.cfg.xml` (only needed for Platform 7)
 
 ```xml
 <bean id="processEngineConfiguration"
@@ -48,7 +47,7 @@ Use the **ProcessCoverageInMemProcessEngineConfiguration**, e.g. in your `camund
 </bean>
 ```
 
-Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension (available for Platform 7 and Platform 8)
+Use the **ProcessEngineCoverageExtension** as your process engine JUnit extension
 
 Either use `@ExtendWith`
 
