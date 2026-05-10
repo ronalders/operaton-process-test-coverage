@@ -4,7 +4,7 @@ A plugin for sonarqube is provided with the artifact
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>sonar-operaton-process-test-coverage-plugin</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
 </dependency>

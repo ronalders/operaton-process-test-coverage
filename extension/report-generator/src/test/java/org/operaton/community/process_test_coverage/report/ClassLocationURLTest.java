@@ -106,15 +106,6 @@ public class ClassLocationURLTest {
   }
 
   @Test
-  @Ignore // doesn't work in Java 11
-  public void test_fileFor_JavaLangStringClass() {
-    File file  = ClassLocationURL.fileFor(String.class);
-    Assert.assertNotNull(file);
-    Assert.assertTrue(file.getAbsolutePath().endsWith(".jar"));
-    Assert.assertTrue(file.isFile());
-  }
-
-  @Test
   public void test_fileFor_OrgJunitTestClass() {
     File file = ClassLocationURL.fileFor(Test.class);
     Assert.assertNotNull(file);

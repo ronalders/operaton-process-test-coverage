@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
     <name>Operaton Process Test Coverage Starter</name>
     <artifactId>operaton-process-test-coverage-starter</artifactId>
@@ -15,5 +15,6 @@
             <artifactId>operaton-process-test-coverage-spring-test</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

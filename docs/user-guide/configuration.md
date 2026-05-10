@@ -47,7 +47,7 @@ possible to configure the output directory for the aggregation report inside the
 
 ```xml
 <plugin>
-    <groupId>org.operaton.community.process_test_coverage</groupId>
+    <groupId>io.github.ronalders</groupId>
     <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
     <version>@project.version@</version>
     <executions>

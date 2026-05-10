@@ -13,8 +13,9 @@ This Operaton community extension **visualises** test process **paths** and **ch
 ## Just use it
 
 * Integrates with all versions of Operato
-* Tested with JDKs 17 and 21 and different operating systems (Windows, Mac and Linux).
-* Supports **JUnit 5** 
+* Tested with JDKs 17, 21 and 25 and different operating systems (Windows, Mac and Linux).
+* Supports **JUnit 5**
+* Supports **Spring Boot 3.x and 4.x**
 * Can be used inside Spring Tests
 
 ## Documentation
@@ -29,7 +30,7 @@ Add a **Maven test dependency** to your project <a href="https://maven-badges.he
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>operaton-process-test-coverage-junit5</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
