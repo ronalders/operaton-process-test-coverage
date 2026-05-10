@@ -5,7 +5,7 @@ If you are interested in developing and building the project please read the fol
 To get sources of the project, please execute:
 
 ```sh
-git clone https://github.com/camunda-community-hub/operaton-process-test-coverage.git
+git clone https://github.com/ronalders/operaton-process-test-coverage.git
 cd operaton-process-test-coverage
 ```
 

@@ -56,12 +56,24 @@ public class CoverageReportUtil {
     private static final String REPORT_TEMPLATE = "index.html";
 
 
+    /**
+     * Creates a graphical HTML coverage report for the active suite of the given collector.
+     *
+     * @param coverageCollector collector that captured the coverage events
+     * @param reportDirectory   target directory for the report; falls back to {@link #TARGET_DIR_ROOT} when {@code null}
+     */
     public static void createReport(final DefaultCollector coverageCollector, final String reportDirectory) {
         writeReport(createCoverageStateResult(coverageCollector), true,
                 getReportDirectory(ofNullable(reportDirectory).orElse(TARGET_DIR_ROOT), coverageCollector),
                 "report.html", CoverageReportUtil::generateHtml);
     }
 
+    /**
+     * Creates a JSON coverage report for the active suite of the given collector.
+     *
+     * @param coverageCollector collector that captured the coverage events
+     * @param reportDirectory   target directory for the report; falls back to {@link #TARGET_DIR_ROOT} when {@code null}
+     */
     public static void createJsonReport(final DefaultCollector coverageCollector, final String reportDirectory) {
         writeReport(createCoverageStateResult(coverageCollector), false,
                 getReportDirectory(ofNullable(reportDirectory).orElse(TARGET_DIR_ROOT), coverageCollector),
@@ -76,6 +88,15 @@ public class CoverageReportUtil {
                         it -> !suite.getEvents(it.getKey()).isEmpty()).collect(Collectors.toSet()));
     }
 
+    /**
+     * Writes a coverage report file produced by the supplied {@code reportCreator} into the given directory.
+     *
+     * @param coverageResult            JSON coverage result that is fed to {@code reportCreator}
+     * @param installReportDependencies whether to also copy bundled image resources into the output directory
+     * @param reportDirectory           directory the report is written to (created if missing)
+     * @param fileName                  name of the generated report file
+     * @param reportCreator             function that turns the coverage result into the file's contents
+     */
     public static void writeReport(final String coverageResult, boolean installReportDependencies,
                                    final File reportDirectory, final String fileName, final Function<String, String> reportCreator) {
 
@@ -90,6 +111,12 @@ public class CoverageReportUtil {
         }
     }
 
+    /**
+     * Renders the standalone HTML report by injecting the coverage result into the bundled template.
+     *
+     * @param result JSON coverage result to embed
+     * @return the standalone HTML report contents
+     */
     public static String generateHtml(String result) {
         InputStream template =  CoverageReportUtil.class.getClassLoader().getResourceAsStream(REPORT_TEMPLATE);
         Objects.requireNonNull(template);

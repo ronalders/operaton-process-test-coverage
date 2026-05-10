@@ -4,7 +4,7 @@
     <parent>
         <artifactId>operaton-process-test-coverage-parent</artifactId>
         <groupId>io.github.ronalders</groupId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
     <name>Operaton Process Test Coverage JUnit5</name>
     <artifactId>operaton-process-test-coverage-junit5</artifactId>
@@ -32,10 +32,6 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>operaton-process-test-coverage-report-generator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.operaton.bpm</groupId>
-            <artifactId>operaton-engine-spring</artifactId>
         </dependency>
         <dependency>
             <groupId>org.operaton.bpm</groupId>

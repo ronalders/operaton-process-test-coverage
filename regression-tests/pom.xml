@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-root</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <name>Operaton Process Test Coverage Regression Tests Parent</name>

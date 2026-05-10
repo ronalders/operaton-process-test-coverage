@@ -5,12 +5,36 @@
     <parent>
         <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-root</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
-    <name>Operaton Process Test Coverage Extension Parent</name>
+    <groupId>io.github.ronalders</groupId>
     <artifactId>operaton-process-test-coverage-parent</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Operaton Process Test Coverage Extension Parent</name>
+    <description>Parent POM for Operaton Process Test Coverage extension modules.</description>
+    <url>https://github.com/ronalders/operaton-process-test-coverage</url>
+
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Ron Alders</name>
+            <email>aldersron@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/ronalders/operaton-process-test-coverage.git</connection>
+        <developerConnection>scm:git:ssh://github.com:ronalders/operaton-process-test-coverage.git</developerConnection>
+        <url>https://github.com/ronalders/operaton-process-test-coverage</url>
+    </scm>
 
     <modules>
         <module>core</module>

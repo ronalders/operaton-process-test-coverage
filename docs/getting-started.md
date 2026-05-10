@@ -14,7 +14,7 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>operaton-process-test-coverage-junit5</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
@@ -25,7 +25,7 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>operaton-process-test-coverage-spring-test</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
@@ -36,7 +36,7 @@ Please define the version of the library using properties like this:
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>operaton-process-test-coverage-starter</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
   <scope>test</scope>
@@ -169,7 +169,7 @@ You can still configure the plugin in the pluginManagement section.
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>org.operaton.community.process_test_coverage</groupId>
+                    <groupId>io.github.ronalders</groupId>
                     <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                     <version>${operaton-process-test-coverage.version}</version>
                 </plugin>
@@ -189,7 +189,7 @@ The configuration for this use case looks like this:
     <reporting>
         <plugins>
             <plugin>
-                <groupId>org.operaton.community.process_test_coverage</groupId>
+                <groupId>io.github.ronalders</groupId>
                 <artifactId>operaton-process-test-coverage-report-aggregator-maven-plugin</artifactId>
                 <version>${operaton-process-test-coverage.version}</version>
             </plugin>
@@ -204,7 +204,7 @@ This functionality is provided by the artifact:
 
 ```xml
 <dependency>
-  <groupId>org.operaton.community.process_test_coverage</groupId>
+  <groupId>io.github.ronalders</groupId>
   <artifactId>sonar-operaton-process-test-coverage-plugin</artifactId>
   <version>${operaton-process-test-coverage.version}</version>
 </dependency>

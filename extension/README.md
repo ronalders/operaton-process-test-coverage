@@ -10,11 +10,11 @@ Current compile version is Operaton 1.1.2
 
 Regression test versions are:
 
-| JDK \ Operaton Version | 1.1.2 | 2.21 | 
-|------------------------|-------|------|
-| JDK 17 (LTS)           | yes   | yes  | 
-| JDK 21 (LTS)           | yes   | yes  |
-|                        |       |      |
+| JDK \ Operaton Version | 1.1.2 | 2.0.2 | 
+|------------------------|-------|-------|
+| JDK 17 (LTS)           | yes   | yes   | 
+| JDK 21 (LTS)           | yes   | yes   |
+|                        |       |       |
 
 
 

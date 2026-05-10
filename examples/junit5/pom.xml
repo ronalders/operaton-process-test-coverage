@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.github.ronalders</groupId>
         <artifactId>operaton-process-test-coverage-examples-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <name>Operaton Process Test Coverage Example JUnit5</name>
